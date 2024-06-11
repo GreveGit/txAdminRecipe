@@ -20,12 +20,9 @@ tasks:
     src: ./tmp/mythicframework/logo96.png
     dest: ./logo96.png
 
-    # CFX Default Data
-  - action: download_github
-    src: https://github.com/GreveGit/cfx-server-data
-    subpath: resources
-    dest: ./resources/[cfx]
-
+  - action: move_path
+    src: ./tmp/mythicframework/Files/resources
+    dest: ./
 
   # Clean up
   - action: remove_path
