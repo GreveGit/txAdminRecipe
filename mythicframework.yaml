@@ -13,11 +13,11 @@ tasks:
     dest: ./tmp/mythicframework
 
   - action: move_path
-    src: ./tmp/server.cfg
+    src: ./tmp/mythicframework/server.cfg
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/logo96.png
+    src: ./tmp/mythicframework/logo96.png
     dest: ./logo96.png
 
   # - action: download_github
