@@ -29,7 +29,7 @@ tasks:
     - action: waste_time # prevent github throttling
     seconds: 10
 
-    - action: download_github
+  - action: download_github
     src: https://github.com/Mythic-Framework/mythic-framework/resources/%5Bmythic-assets%5D
     subpath: resources
     dest: ./resources/[mythic-assets]
