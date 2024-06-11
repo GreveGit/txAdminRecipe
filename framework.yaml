@@ -10,20 +10,20 @@ tasks:
   - action: download_github
     src: https://github.com/GreveGit/txAdminRecipe
     ref: main
-    dest: ./tmp/framework
+    dest: ./tmp/
 
   - action: move_path
-    src: ./tmp/framework/server.cfg
+    src: ./tmp/server.cfg
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/framework/logo96.png
+    src: ./tmp/logo96.png
     dest: ./logo96.png
 
     # Importing sql to database
   - action: connect_database
   - action: query_database
-    file: ./tmp/framework/mythic.sql
+    file: ./tmp/mythic.sql
 
   - action: download_github
     src: https://github.com/Mythic-Framework/mythic-framework/tree/main/resources/%5Bcfx%5D
