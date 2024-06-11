@@ -20,8 +20,22 @@ tasks:
     src: ./tmp/mythicframework/logo96.png
     dest: ./logo96.png
 
+    - action: move_path
+    src: ./tmp/mythicframework/[mythic]
+    dest: ./resources/oxmysql
+  
+    - action: waste_time # prevent github throttling
+    seconds: 15
+
   - action: move_path
     src: ./tmp/mythicframework/[mythic-assets]
+    dest: ./resources/[mythic-assets]
+
+    - action: waste_time # prevent github throttling
+    seconds: 15
+
+  - action: move_path
+    src: ./tmp/mythicframework/[mythic]
     dest: ./resources/[mythic-assets]
 
   # Clean up
