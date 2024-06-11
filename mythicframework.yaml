@@ -6,11 +6,11 @@ author: Alzar and Nick
 description: txAdminRecipe for Mythic Framework
 
 tasks:
-  #  Download Important Default Files
+  #  Download needed Files
   - action: download_github
     src: https://github.com/GreveGit/txAdminRecipe
     ref: main
-    dest: ./tmp/
+    dest: ./tmp/mythicframework
 
   - action: move_path
     src: ./tmp/server.cfg
@@ -20,10 +20,10 @@ tasks:
     src: ./tmp/logo96.png
     dest: ./logo96.png
 
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-framework/tree/main/resources/%5Bcfx%5D
-    subpath: resources
-    dest: ./resources/[cfx]
+  # - action: download_github
+  #   src: https://github.com/Mythic-Framework/mythic-framework/tree/main/resources/%5Bcfx%5D
+  #   subpath: resources
+  #   dest: ./resources/[cfx]
 
   # Clean up
   - action: remove_path
