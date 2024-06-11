@@ -27,7 +27,7 @@ tasks:
     dest: ./resources/[cfx]
 
     - action: download_github
-    src: https://github.com/GreveGit/txAdminRecipe/mythic-assets/*
+    src: https://github.com/GreveGit/txAdminRecipe/mythic-assets/mythic_asset_mall
     subpath: resources
     dest: ./resources/[cfx]
 
