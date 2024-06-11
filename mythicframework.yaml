@@ -21,8 +21,8 @@ tasks:
     dest: ./logo96.png
 
   - action: move_path
-    src: ./tmp/mythicframework/Files/resources
-    dest: ./
+    src: ./tmp/mythicframework/[mythic-assets]
+    dest: ./resources/[mythic-assets]
 
   # Clean up
   - action: remove_path
