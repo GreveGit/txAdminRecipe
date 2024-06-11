@@ -36,7 +36,7 @@ tasks:
 
   - action: move_path
     src: ./tmp/mythicframework/[mythic]
-    dest: ./resources/[mythic-assets]
+    dest: ./resources/[mythic]
 
   # Clean up
   - action: remove_path
