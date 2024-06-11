@@ -26,6 +26,13 @@ tasks:
     subpath: resources
     dest: ./resources/[cfx]
 
+    - action: waste_time # prevent github throttling
+    seconds: 10
+
+    - action: download_github
+    src: https://github.com/Mythic-Framework/mythic-framework/tree/main/resources/%5Bmythic-assets%5D
+    subpath: resources
+    dest: ./resources/[mythic-assets]
 
   # Clean up
   - action: remove_path
