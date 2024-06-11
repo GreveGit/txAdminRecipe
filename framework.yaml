@@ -20,18 +20,10 @@ tasks:
     src: ./tmp/logo96.png
     dest: ./logo96.png
 
-    # Importing sql to database
-  - action: connect_database
-  - action: query_database
-    file: ./tmp/mythic.sql
-
   - action: download_github
     src: https://github.com/Mythic-Framework/mythic-framework/tree/main/resources/%5Bcfx%5D
     subpath: resources
     dest: ./resources/[cfx]
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
 
   # Clean up
   - action: remove_path
