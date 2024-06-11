@@ -26,6 +26,7 @@ tasks:
     subpath: resources
     dest: ./resources/[cfx]
 
+
   # Clean up
   - action: remove_path
     path: ./tmp
