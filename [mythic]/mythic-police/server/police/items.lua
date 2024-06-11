@@ -1,3 +1,0 @@
-function PoliceItems()
-    
-end
