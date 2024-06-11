@@ -26,14 +26,6 @@ tasks:
     subpath: resources
     dest: ./resources/[cfx]
 
-    - action: download_github
-    src: https://github.com/GreveGit/txAdminRecipe/mythic-assets/mythic_asset_mall
-    subpath: resources
-    dest: ./resources/[cfx]
-
-    - action: waste_time # prevent github throttling
-    seconds: 10
-
   # Clean up
   - action: remove_path
     path: ./tmp
