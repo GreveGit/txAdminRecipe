@@ -30,7 +30,7 @@ tasks:
     seconds: 10
 
     - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-framework/tree/main/resources/%5Bmythic-assets%5D
+    src: https://github.com/Mythic-Framework/mythic-framework/resources/%5Bmythic-assets%5D
     subpath: resources
     dest: ./resources/[mythic-assets]
 
