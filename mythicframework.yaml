@@ -29,10 +29,6 @@ tasks:
     - action: waste_time # prevent github throttling
     seconds: 10
 
-  - action: download_github
-    src: https://github.com/Mythic-Framework/mythic-framework/resources/%mythic-assets%/mythic_asset_mall
-    dest: ./resources/[mythic-assets]
-
   # Clean up
   - action: remove_path
     path: ./tmp
