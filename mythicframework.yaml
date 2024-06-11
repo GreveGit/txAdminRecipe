@@ -31,9 +31,7 @@ tasks:
     src: ./tmp/mythicframework/[mythic-assets]
     dest: ./resources/[mythic-assets]
 
-    - action: waste_time # prevent github throttling
-    seconds: 15
-
+    
   - action: move_path
     src: ./tmp/mythicframework/[mythic]
     dest: ./resources/[mythic]
